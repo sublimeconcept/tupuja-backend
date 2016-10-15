@@ -27,11 +27,11 @@ var api = new ParseServer({
   appName: process.env.APP_NAME: || 'TuPujaBackend',
 
   emailAdapter: {
-	module: 'parse-server-simple-maulgun-adapter',
+	module: 'parse-server-simple-mailgun-adapter',
 	options: {
 		fromAddress: process.env.EMAIL_FROM || 'admin@tupuja.com',
 		domaim: process.env.MAILGUN_DOMAIN || '',
-		apiKey: process.env.MAILGUN_API_KEY || '',
+		apiKey: process.env.MAILGUN_API_KEY || ''
 	}
 
   }
