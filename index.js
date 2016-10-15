@@ -22,7 +22,7 @@ var api = new ParseServer({
     classNames: ["Auction"] // List of classes to support for query subscriptions
   },
   //**** EMAIL VERIFICATION ***/
-  verifyUserEmails:true,
+  verifyUserEmails: true,
   publicServerURL: process.env.SERVER_URL || '',
   appName: process.env.APP_NAME: || 'TuPujaBackend',
 
@@ -30,7 +30,7 @@ var api = new ParseServer({
 	module: 'parse-server-simple-mailgun-adapter',
 	options: {
 		fromAddress: process.env.EMAIL_FROM || 'admin@tupuja.com',
-		domaim: process.env.MAILGUN_DOMAIN || '',
+		domain: process.env.MAILGUN_DOMAIN || '',
 		apiKey: process.env.MAILGUN_API_KEY || ''
 	}
 
