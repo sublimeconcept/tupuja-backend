@@ -25,7 +25,7 @@ var api = new ParseServer({
   //**** EMAIL VERIFICATION ***/
   verifyUserEmails: true,
   publicServerURL: process.env.SERVER_URL || '',
-  appName: process.env.APP_NAME: || 'TuPujaBackend',
+  appName: process.env.APP_NAME || 'TuPujaBackend',
 
   emailAdapter: {
 	module: 'parse-server-simple-mailgun-adapter',
