@@ -23,7 +23,7 @@ var api = new ParseServer({
     classNames: ["Auction"] // List of classes to support for query subscriptions
   },
   //**** EMAIL VERIFICATION ***/
-  verifyUserEmails: true,
+ // verifyUserEmails: true, //lets ommit this for now
   publicServerURL: process.env.SERVER_URL || '',
   appName: process.env.APP_NAME || 'TuPujaBackend',
 
