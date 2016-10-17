@@ -24,6 +24,7 @@ var api = new ParseServer({
   },
   //**** EMAIL VERIFICATION ***/
   verifyUserEmails: true,
+  preventLoginWithUnverifiedEmail: true,
   publicServerURL: process.env.SERVER_URL || '',
   appName: process.env.APP_NAME || 'TuPujaBackend',
 
