@@ -29,7 +29,7 @@ Parse.Cloud.define('updateAuction',function(req,resp){
 	q.find()
 		.then(function(auction){
 			
-			console.log("auction found: ", auction.id);
+			console.log("auction found: ", auction);
 			auction.increment("bids");//increase bids
 			auction.increment("currentPrice", 0.01);//increase the price
 			var newTime = auction.get("endDate");
