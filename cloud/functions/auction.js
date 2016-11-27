@@ -43,7 +43,7 @@ Parse.Cloud.define('updateAuction',function(req,resp){
 					console.error("Error occurred updating auction: ", err);
 				});
 		},
-		funtion(err){
+		function(err){
 			console.error("error fetching auction from parse server: ", err);
 		});
 
