@@ -5,4 +5,6 @@ Parse.Cloud.define('updateAuction',function(req,resp){
 	console.log(JSON.stringify(req));	
 	console.log("user: ", req.params.data.user);
 	console.log("auction: ", req.params.data.auction);
+
+	resp.success("Function Executed successfully!!!!");
 });
